@@ -9,8 +9,8 @@ setlocal iskeyword+=.
 setlocal iskeyword+=/
 setlocal iskeyword+=:
 
-syn match logstashVariableBlock '\[[^,]*\]' contained
-syn match logstashVariableString '\[[^,]*\]' contained
+syn match logstashVariableBlock '\[[^,]*\]' contains=logstashFormat
+syn match logstashVariableString '\[[^,]*\]' contains=logstashFormat
 
 syn match logstashOperator '=>' contained
 syn match logstashOperator '==' contained
