@@ -35,6 +35,7 @@ syn region logstashBlock start=+{+ end=+}+ contains=logstashBlock,logstashCommen
 syn region logstashString start=+"+ end=+"+ skip=+\\\\\|\\"+ contains=logstashVariableString,logstashFormat oneline
 syn region logstashString start=+'+ end=+'+ skip=+\\\\\|\\'+ contains=logstashVariableString,logstashFormat oneline
 syn region logstashFormat start=+%{+ end=+}+ contains=logstashVariableString oneline
+syn region logstashFormat start=+<+ end=+>+ contains=logstashVariableString oneline
 
 syn match logstashComment ' *#.*$'
 
